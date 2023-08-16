@@ -1,0 +1,134 @@
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #333;
+  border-bottom: solid black;
+}
+
+nav a.activeclass {
+  border-color: black;
+}
+
+form {
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  height: 36px;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: black;
+}
+
+button[type="button"] {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #e85151;
+}
+
+label {
+  flex: 3;
+}
+
+@media screen and (max-width: 768px){
+  
+  main{
+    overflow-x: hidden;
+  }
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    width: 95%;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-left: 1px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+}
